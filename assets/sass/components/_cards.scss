@@ -2,10 +2,22 @@
 .news-card {
     border: 5px solid orange;
     background-color: yellow;
+    cursor: pointer;
+
+    &__header {
+    }
+  
+    &__body {
+    }
+
+    &__body p {
+      color:green;
+    }
+  
+    &__img {
+    }
+
 }
 
-.news-card__header {
-  }
 
-  .news-card__body {
-  }
+  

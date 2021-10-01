@@ -7,6 +7,34 @@
 @requires $breakpoints */
 /* End Breakpoint */
 /* abstracts/variables */
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+/* layout/navigation */
+.menu {
+  border-bottom: 1px solid gray;
+}
+.menu__logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.menu__nav {
+  display: inline-block;
+  text-align: right;
+}
+
+.mini-menu__search {
+  border-radius: 30px;
+}
+
+.mini-menu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .g-container {
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -53,11 +81,28 @@
   border: 5px solid green;
 }
 
+/* layout/footer */
+.aside__tags ul li {
+  padding: 2px 4px;
+  background-color: steelblue;
+  margin-right: 1px;
+  color: white;
+  list-style: none;
+}
+/* component/buttons */
+button {
+  background-color: coral;
+  color: white;
+}
+
 .news-card {
   border: 5px solid orange;
   background-color: yellow;
+  cursor: pointer;
 }
-
+.news-card__body p {
+  color: green;
+}
 /* components/images */
 /* responsive image */
 img {

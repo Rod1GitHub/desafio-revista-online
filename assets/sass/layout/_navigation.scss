@@ -1,2 +1,31 @@
 /* layout/navigation */
+.menu {
+    border-bottom: 1px solid gray;
+
+    &__logo {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+    &__nav {
+        display: inline-block;
+        text-align: right;
+    }
+
+}
+
+.mini-menu {
+
+    &__search {
+        border-radius: 30px;
+    }
+
+}
+
+.mini-menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
 

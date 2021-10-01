@@ -1,0 +1,16 @@
+
+.aside {
+    &__list {}
+    &__tags ul li {
+        padding: 2px 4px;
+        background-color: steelblue;
+        margin-right: 1px;
+        color: white;
+        list-style: none;
+    }
+    
+    &__higlight {}
+    &__higlight__card{}
+}
+
+
