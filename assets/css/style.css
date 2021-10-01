@@ -1,136 +1,136 @@
-* {
-    box-sizing: border-box;
+/* abstracts/breakpoints */
+/* Responsive breakpoint variables */
+/* Source of sizes: Bootstrap 4.6 */
+/* Responsive breakpoint manager
+@access public
+@param {String} $breakpoint - Breakpoint
+@requires $breakpoints */
+/* End Breakpoint */
+/* abstracts/variables */
+.g-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1em;
+  /*   background-color: aqua; */
+  border: 5px solid blue;
 }
 
-body {
-    font-family: monospace;
+.g-nav {
+  grid-column: 1/3;
+  background-color: violet;
+  border: 5px solid purple;
 }
 
-.contenedor {
-    width: 960px;
-    margin: 0 auto;
+.g-section-news {
+  grid-column: 1fr;
+  background-color: violet;
+  border: 5px solid purple;
 }
 
-.menu {
-    width: 960px;
-    padding: 10px;
-    border-bottom: 1px solid gray
+.g-aside {
+  grid-column: 1fr;
+  background-color: violet;
+  border: 5px solid purple;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    display: inline-block;
+.g-section-newsletter {
+  grid-column: 1/3;
+  background-color: violet;
+  border: 5px solid purple;
 }
 
-.nav {
-    display: inline-block;
-    width: 840px;
-    text-align: right;
+.g-footer {
+  grid-column: 1/3;
+  background-color: violet;
+  border: 5px solid purple;
 }
 
-
-
-.nav ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
+.g-section-news {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  background-color: lightgreen;
+  border: 5px solid green;
 }
 
-.input-menu {
-    border-radius: 30px;
+.news-card {
+  border: 5px solid orange;
+  background-color: yellow;
 }
 
-.contenido {
-    width: 960px;
-    margin: 0 auto;
+/* components/images */
+/* responsive image */
+img {
+  width: 100%;
+  height: auto;
 }
 
-.listad-noticias {
-    width: 700px;
-    float: left;
+/* pages/home */
+@media (max-width: 575.98px) {
+  .g-section-news {
+    color: blue;
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .g-section-news {
+    color: pink;
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .g-section-news {
+    color: orange;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .g-section-news {
+    color: brown;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .g-section-news {
+    color: cyan;
+  }
+}
+@media (min-width: 1400px) {
+  .g-section-news {
+    color: purple;
+  }
 }
 
-.noticia {
-    width: 210px;
-    display: inline-block;
-    margin: 5px;
-    cursor: pointer;
+@media (max-width: 575.98px) {
+  .g-aside {
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .g-aside {
+    display: none;
+  }
 }
 
-.cuerpo img {
-    width: 210px;
-    height: 300px;
+@media (max-width: 575.98px) {
+  .g-container {
+    grid-template-columns: 3fr;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .g-container {
+    grid-template-columns: 3fr;
+  }
 }
 
-.cuerpo p {
-    padding: 5px 10px;
+@media (max-width: 575.98px) {
+  .g-nav, .g-section-newsletter, .g-footer {
+    grid-column: 1/2;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .g-nav, .g-section-newsletter, .g-footer {
+    grid-column: 1/2;
+  }
 }
 
-.listado-izquierdo {
-    width: 220px;
-    float: right;
-}
-
-.cabecera-listado {
-    width: 220px;
-    border-bottom: 1px solid gray;
-}
-
-.tags {
-    border-bottom: 1px solid gray;
-}
-
-.tags ul {
-    padding: 0;
-    list-style: none;
-}
-
-.tags ul li {
-    padding: 2px 4px;
-    background-color: steelblue;
-    margin-right: 1px;
-    color: white;
-}
-
-.noticias-destacadas {
-    margin-bottom: 50px;
-}
-
-.noticias-destacadas img {
-    width: 220px;
-    height: 200px;
-}
-
-
-.newsletter {
-    width: 960px;
-    background-color: #f2f4f5;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.newsletter h2 {
-    font-size: 24px
-}
-
-.group input,
-.group button {
-    display: inline-block;
-    border-width: 0;
-    font-size: 13px;
-    padding: 5px 10px;
-
-}
-
-.group button {
-    background-color: coral;
-    color: white;
-}
-
-.footer {
-    width: 960px;
-    margin: 0 auto;
-    text-align: center;
-}
+/*# sourceMappingURL=style.css.map */

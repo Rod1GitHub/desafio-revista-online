@@ -1,0 +1,59 @@
+/* pages/home */
+
+.g-section-news {
+  @include respond-to('x-small') {
+    color: blue;
+    grid-template-columns: 1fr;
+  }
+
+  @include respond-to('small') {
+      color: pink;
+      grid-template-columns: 1fr;
+    }
+
+  @include respond-to('medium') {
+      color: orange;
+        grid-template-columns: 1fr 1fr;
+        }
+
+  @include respond-to('large') {
+    color: brown;
+  }
+
+  @include respond-to('x-large') {
+    color: cyan;
+  } 
+
+  @include respond-to('xx-large') {
+    color: purple;
+    }
+}
+
+.g-aside {
+  @include respond-to('x-small') {
+    display: none;
+  }
+  @include respond-to('small') {
+    display: none;
+    }
+}
+
+.g-container {
+  @include respond-to('x-small') {
+    grid-template-columns: 3fr;
+  }
+  @include respond-to('small') {
+    grid-template-columns: 3fr;
+    }
+}
+
+.g-nav, .g-section-newsletter, .g-footer {
+  @include respond-to('x-small') {
+    grid-column: 1 / 2;
+  }
+  @include respond-to('small') {
+    grid-column: 1 / 2;
+    }
+}
+
+
