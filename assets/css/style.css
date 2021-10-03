@@ -7,13 +7,129 @@
 @requires $breakpoints */
 /* End Breakpoint */
 /* abstracts/variables */
+/* Colors */
+/* Font Size */
+/* 50px */
+/* 30px */
+/* 20px */
+/* 18px */
+/* 16px */
+/* 14px */
+/* 12px */
+/* Font Family */
+/* Font weight */
+/* base/reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
 body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace, "Old Standard TT", serif;
+}
+
+/* base/typography */
+body {
+  font-family: "Old Standard TT", serif;
   font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+  font-family: "Old Standard TT", serif;
+  font-size: 3.125em;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Old Standard TT", serif;
+  font-size: 1.875em;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Old Standard TT", serif;
+  font-size: 1.25em;
+  font-weight: 700;
+  padding: 5px;
+}
+
+label {
+  font-family: "Old Standard TT", serif;
+  font-size: 0.75em;
+  font-weight: 700;
+  padding: 5px;
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+a {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.125em;
+  font-weight: 700;
 }
 
 /* layout/navigation */
 .menu {
   border-bottom: 1px solid gray;
+  padding: 1em;
 }
 .menu__logo {
   font-size: 24px;
@@ -22,87 +138,186 @@ body {
   display: inline-block;
 }
 .menu__nav {
-  display: inline-block;
-  text-align: right;
+  float: right;
 }
 
 .mini-menu__search {
   border-radius: 30px;
+  float: right;
+  margin-left: 1em;
 }
-
-.mini-menu li a {
+.mini-menu li, .mini-menu li a {
   text-decoration: none;
   text-transform: uppercase;
+  float: left;
+  color: inherit;
+  margin-left: 1em;
+}
+.mini-menu input {
+  border-radius: 500px;
+}
+
+.atention {
+  background-color: yellow;
+}
+
+.aside__list h3 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1em;
+}
+.aside__tags h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1em;
+}
+.aside__tags ul li {
+  background-color: steelblue;
+  color: white;
+  list-style: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.875em;
+  display: inline-block;
+  padding: 0.3em;
+  margin-top: 0.3em;
+}
+.aside__higlight h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1em;
+}
+.aside__higlight__card h4 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.875em;
+  padding-bottom: 2em;
+}
+
+.g-section-newsletter {
+  text-align: center;
+  background-color: #d1d1d1;
+  padding: 1em;
+}
+.g-section-newsletter p {
+  margin-bottom: 1em;
+}
+.g-section-newsletter h2 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.25em;
+}
+
+/* layout/footer */
+.g-footer {
+  text-align: center;
+  padding-bottom: 1em;
 }
 
 .g-container {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 1em;
-  /*   background-color: aqua; */
-  border: 5px solid blue;
+  width: 80%;
+  margin: auto;
 }
 
 .g-nav {
   grid-column: 1/3;
-  background-color: violet;
-  border: 5px solid purple;
 }
 
 .g-section-news {
   grid-column: 1fr;
-  background-color: violet;
-  border: 5px solid purple;
 }
 
 .g-aside {
   grid-column: 1fr;
-  background-color: violet;
-  border: 5px solid purple;
 }
 
 .g-section-newsletter {
   grid-column: 1/3;
-  background-color: violet;
-  border: 5px solid purple;
 }
 
 .g-footer {
   grid-column: 1/3;
-  background-color: violet;
-  border: 5px solid purple;
 }
 
 .g-section-news {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1em;
-  background-color: lightgreen;
-  border: 5px solid green;
 }
 
-/* layout/footer */
-.aside__tags ul li {
-  padding: 2px 4px;
-  background-color: steelblue;
-  margin-right: 1px;
-  color: white;
-  list-style: none;
+.button-container {
+  height: 100%;
 }
-/* component/buttons */
-button {
-  background-color: coral;
+
+a {
+  color: inherit;
+}
+a:hover {
+  color: green;
+}
+
+.button-container {
+  align-items: center;
+  justify-content: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn1 {
+  display: inline-block;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+}
+.btn1--primary {
+  background: coral;
   color: white;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 12px 36px;
+}
+.btn1--primary:hover {
+  background: #444242;
+}
+.btn1--primary:active {
+  background: cyan;
+  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+.btn1--inside {
+  margin-left: -96px;
+}
+
+.form__field {
+  width: 360px;
+  background: #fff;
+  color: purple;
+  font: inherit;
+  border: 0;
+  outline: 0;
+  padding: 22px 18px;
 }
 
 .news-card {
-  border: 5px solid orange;
-  background-color: yellow;
   cursor: pointer;
 }
-.news-card__body p {
-  color: green;
+.news-card__header h2 {
+  font-size: 1.25em;
+  padding: 1em 0;
+  font-family: "Roboto Mono", monospace;
 }
+.news-card__body p {
+  padding: 1em 0;
+  font-size: 0.875em;
+  font-family: "Roboto Mono", monospace;
+}
+.news-card__img {
+  border: 1px solid black;
+}
+
 /* components/images */
 /* responsive image */
 img {
@@ -110,71 +325,188 @@ img {
   height: auto;
 }
 
+/* components/collapsable-menu */
+.my-icon:before {
+  color: #000;
+  content: "\f0c9";
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  /* This needs to be 900 for the icon to display */
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: black;
+}
+
+/* *{
+ box-sizing: border-box;
+} */
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox]:checked ~ .collapse {
+  height: 170px;
+}
+input[type=checkbox]:checked ~ .collapse .iconPlus {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+input[type=checkbox]:checked ~ .collapse .minus {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+input[type=checkbox]:checked ~ .collapse ul {
+  /* opacity: 1; */
+}
+
+.nav__collapsable-menu {
+  float: right;
+}
+
+.collapse {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  /* border: 5px solid black; */
+  display: block;
+  width: 140px;
+  height: 50px;
+  margin: 0;
+  padding-top: 35px;
+  overflow: hidden;
+  cursor: pointer;
+  /* background: white; */
+  /* border-radius: 4px; */
+  /* box-shadow: 0 3px 2px 1px black; */
+  /*   .iconPlus {
+     @include animate;
+     position: relative;
+     display: inline-block;
+     vertical-align: middle;
+     float: right;
+     width: 20px;
+     .plus {
+       display: block;
+       width: 3px;
+       height: 21px;
+       margin: 0 auto;
+     }
+     .minus {
+       @include animate;
+       position: absolute;
+       display: inline-block;
+       width: 20px;
+       height: 3px;
+       top: 9px;
+     }
+   } */
+}
+.collapse .details {
+  display: block;
+  padding: 15px 0 0 0;
+}
+.collapse .details a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1em;
+  display: inline-block;
+  padding: 2px;
+}
+
 /* pages/home */
 @media (max-width: 575.98px) {
   .g-section-news {
-    color: blue;
     grid-template-columns: 1fr;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .g-section-news {
-    color: pink;
     grid-template-columns: 1fr;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .g-section-news {
-    color: orange;
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .g-section-news {
-    color: brown;
+
+@media (max-width: 575.98px) {
+  .g-aside {
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .g-aside {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .g-container {
+    grid-template-columns: 3fr;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .g-container {
+    grid-template-columns: 3fr;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .g-nav, .g-section-newsletter, .g-footer {
+    grid-column: 1/2;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .g-nav, .g-section-newsletter, .g-footer {
+    grid-column: 1/2;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .mini-menu {
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .mini-menu {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .mini-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1400px) {
+  .nav__collapsable-menu {
+    display: none;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
-  .g-section-news {
-    color: cyan;
-  }
-}
-@media (min-width: 1400px) {
-  .g-section-news {
-    color: purple;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .g-aside {
+  .nav__collapsable-menu {
     display: none;
   }
 }
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .g-aside {
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .nav__collapsable-menu {
     display: none;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .g-container {
-    grid-template-columns: 3fr;
-  }
-}
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .g-container {
-    grid-template-columns: 3fr;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .g-nav, .g-section-newsletter, .g-footer {
-    grid-column: 1/2;
-  }
-}
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .g-nav, .g-section-newsletter, .g-footer {
-    grid-column: 1/2;
   }
 }
 

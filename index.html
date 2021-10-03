@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revista Online</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -21,8 +21,27 @@
                     <ul class="mini-menu">
                         <li><a href="">Nosotros</a></li>
                         <li><a href="">Contacto</a></li>
-                        <li class="mini-menu__search"><input type="text" name="buscar" placeholder="buscar..." /></li>
+                        <li><a class="atention" href="https://github.com/Rod1GitHub/desafio-revista-online" target="_blank">Github</a></li>
+                        <li><input class="mini-menu__search" type="text" name="buscar" placeholder="buscar..." /></li>
                     </ul>
+                    
+
+                    <div class="nav__collapsable-menu">
+                        <input type="checkbox" id="collapse1Rod">
+                            <label class="collapse" for="collapse1Rod">
+                                <p><i class="my-icon"></i></p>
+                                <div class="iconPlus">
+                                    <span class="plus"></span>
+                                    <span class="minus"></span>
+                                </div>
+                                <div class="details">
+                                    <a href="#">Nosotros</a><br>
+                                    <a href="#">Contacto</a><br>
+                                    <a class="atention" href="https://github.com/Rod1GitHub/desafio-revista-online" target="_blank">Github</a><br>
+                                   
+                                </div>
+                            </label>
+                    </div>
                 </div>
             </nav>
 
@@ -31,7 +50,7 @@
                 <div class="news-card">
                     <div class="news-card__header">
                         <h2>
-                            Lorem ipsum dolor sit amet,
+                            Lorem ipsum dolor sit amet
                         </h2>
                     </div>
                     <div class="news-card__body">
@@ -45,7 +64,7 @@
                 <div class="news-card">
                     <div class="news-card__header">
                         <h2>
-                            Lorem ipsum dolor sit amet,
+                            Lorem ipsum dolor sit amet
                         </h2>
                     </div>
                     <div class="news-card__body">
@@ -59,7 +78,7 @@
                 <div class="news-card">
                     <div class="news-card__header">
                         <h2>
-                            Lorem ipsum dolor sit amet,
+                            Lorem ipsum dolor sit amet
                         </h2>
                     </div>
                     <div class="news-card__body">
@@ -73,7 +92,7 @@
                 <div class="news-card">
                     <div class="news-card__header">
                         <h2>
-                            Lorem ipsum dolor sit amet,
+                            Lorem ipsum dolor sit amet
                         </h2>
                     </div>
                     <div class="news-card__body">
@@ -87,7 +106,7 @@
                 <div class="news-card">
                     <div class="news-card__header">
                         <h2>
-                            Lorem ipsum dolor sit amet,
+                            Lorem ipsum dolor sit amet
                         </h2>
                     </div>
                     <div class="news-card__body">
@@ -101,7 +120,7 @@
                 <div class="news-card">
                     <div class="news-card__header">
                         <h2>
-                            Lorem ipsum dolor sit amet,
+                            Lorem ipsum dolor sit amet
                         </h2>
                     </div>
                     <div class="news-card__body">
@@ -115,21 +134,25 @@
             </section>
 
             <aside class="g-aside">
+
                 <div class="aside__list">
-                    <h1>Nosotros </h1>
+                    <h3>Nosotros </h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     </p>
                 </div>
+
                 <div class="aside__tags">
+                    <hr>
                     <h1>Tags </h1>
                     <ul>
                         <li>Viajes</li>
                         <li>Noticias</li>
                         <li>Comida</li>
                     </ul>
+                    <hr>
                 </div>
                 <div class="aside__higlight">
                     <h1>Destacados </h1>
@@ -152,8 +175,17 @@
                 <h2>Lorem ipsum dolor sit amet</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
                 <div class="newsletter__mailing">
-                    <input type="text" name="">
-                    <button>Suscríbete</button>
+
+                    <div class="button-container">
+                        <div class="button-container__item">
+                            <form class="form">
+                                <input type="email" class="form__field" placeholder="Tu email" />
+                                <button type="button" class="btn1 btn1--primary btn1--inside uppercase">Suscríbete</button>
+                            </form>
+                        </div>
+                    </div>
+
+
                 </div>
             </section>
 

@@ -1,6 +1,7 @@
 /* layout/navigation */
 .menu {
     border-bottom: 1px solid gray;
+    padding: 1em;
 
     &__logo {
         font-size: 24px;
@@ -10,22 +11,32 @@
     }
 
     &__nav {
-        display: inline-block;
-        text-align: right;
+        float: right;
     }
-
 }
 
 .mini-menu {
 
     &__search {
         border-radius: 30px;
+        float:right;
+        margin-left: 1em;
     }
 
+    & li, & li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        float: left;
+        color: inherit;
+        margin-left:1em;
+    }
+
+    & input {
+        border-radius: 500px;
+    }
+    
 }
 
-.mini-menu li a {
-    text-decoration: none;
-    text-transform: uppercase;
+.atention {
+    background-color: yellow;
 }
-

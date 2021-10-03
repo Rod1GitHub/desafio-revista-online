@@ -1,20 +1,25 @@
 
 .news-card {
-    border: 5px solid orange;
-    background-color: yellow;
     cursor: pointer;
 
-    &__header {
+    &__header h2 {
+      font-size: $x-large;
+      padding: 1em 0;
+      font-family: $font-modern;
+
     }
   
     &__body {
     }
 
     &__body p {
-      color:green;
+      padding: 1em 0;
+      font-size: $small;
+      font-family: $font-modern;
     }
   
     &__img {
+      border: 1px solid black;
     }
 
 }

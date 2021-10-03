@@ -2,31 +2,16 @@
 
 .g-section-news {
   @include respond-to('x-small') {
-    color: blue;
     grid-template-columns: 1fr;
   }
 
   @include respond-to('small') {
-      color: pink;
       grid-template-columns: 1fr;
     }
 
   @include respond-to('medium') {
-      color: orange;
         grid-template-columns: 1fr 1fr;
         }
-
-  @include respond-to('large') {
-    color: brown;
-  }
-
-  @include respond-to('x-large') {
-    color: cyan;
-  } 
-
-  @include respond-to('xx-large') {
-    color: purple;
-    }
 }
 
 .g-aside {
@@ -54,6 +39,34 @@
   @include respond-to('small') {
     grid-column: 1 / 2;
     }
+}
+
+.mini-menu  {
+  @include respond-to('x-small') {
+    display:none;
+  }
+
+  @include respond-to('small') {
+      display:none;
+    }
+
+  @include respond-to('medium') {
+        display:none;
+        }
+}
+
+.nav__collapsable-menu {
+  @include respond-to('xx-large') {
+    display:none;
+  }
+
+  @include respond-to('x-large') {
+      display:none;
+    }
+
+  @include respond-to('large') {
+        display:none;
+        }
 }
 
 

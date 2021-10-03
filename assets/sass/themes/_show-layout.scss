@@ -1,0 +1,43 @@
+.g-section-news {
+    @include respond-to('x-small') {
+      color: blue;
+    }
+  
+    @include respond-to('small') {
+        color: pink;
+      }
+  
+    @include respond-to('medium') {
+        color: orange;
+          }
+  
+    @include respond-to('large') {
+      color: brown;
+    }
+  
+    @include respond-to('x-large') {
+      color: cyan;
+    } 
+  
+    @include respond-to('xx-large') {
+      color: purple;
+      }
+  }
+  
+  .g-container {
+    background-color: aqua;
+    border: 5px solid blue;
+  }
+  
+  .g-nav, .g-section-news, .g-aside, .g-section-newsletter, .g-footer {
+    background-color: violet;
+    border: 5px solid purple;
+  }
+  
+  .g-section-news {
+  background-color: lightgreen;
+  border: 5px solid green;
+  }
+  
+  
+  
