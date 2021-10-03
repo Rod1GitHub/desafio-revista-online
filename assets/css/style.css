@@ -272,13 +272,14 @@ a:hover {
   padding: 0;
   transition: all 200ms ease-in;
   cursor: pointer;
+  padding: 12px 36px;
+  box-sizing: border-box;
 }
 .btn1--primary {
   background: coral;
   color: white;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
-  padding: 12px 36px;
 }
 .btn1--primary:hover {
   background: #444242;
@@ -288,17 +289,18 @@ a:hover {
   box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
 }
 .btn1--inside {
-  margin-left: -96px;
+  margin-left: 0;
 }
 
 .form__field {
-  width: 360px;
+  width: 200px;
   background: #fff;
   color: purple;
   font: inherit;
   border: 0;
   outline: 0;
-  padding: 22px 18px;
+  padding: 12px 36px;
+  box-sizing: border-box;
 }
 
 .news-card {
@@ -507,6 +509,22 @@ input[type=checkbox]:checked ~ .collapse ul {
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .nav__collapsable-menu {
     display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .g-container {
+    width: 95%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .g-container {
+    width: 95%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .g-container {
+    width: 95%;
   }
 }
 

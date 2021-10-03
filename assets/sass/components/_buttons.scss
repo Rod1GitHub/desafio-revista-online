@@ -1,4 +1,3 @@
-
 .button-container {
 	height: 100%;
 }
@@ -32,13 +31,15 @@ a {
 	padding: 0;
 	transition: all 200ms ease-in;
 	cursor: pointer;
+	padding: 12px 36px;
+	box-sizing: border-box;
 	
 	&--primary {
 		background: coral;
 		color: white;
 		box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
 		border-radius: 2px;
-		padding: 12px 36px;
+
 		
 		&:hover {
 			background: darken(rgb(78, 76, 76), 4%);
@@ -51,19 +52,20 @@ a {
 	}
 	
 	&--inside {
-		margin-left: -96px;
+		margin-left: 0;
 	}
 }
 
 //** form
 .form {	
 	&__field {
-		width: 360px;
+		width: 200px;
 		background: #fff;
 		color: purple;
 		font: inherit;
 		border: 0;
 		outline: 0;
-		padding: 22px 18px;
+		padding: 12px 36px;
+		box-sizing: border-box;
 	}
 }

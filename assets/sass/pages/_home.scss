@@ -70,3 +70,16 @@
 }
 
 
+.g-container {
+  @include respond-to('x-small') {
+    width: 95%;
+  }
+
+  @include respond-to('small') {
+    width: 95%;
+    }
+
+  @include respond-to('medium') {
+    width: 95%;
+        }
+}
