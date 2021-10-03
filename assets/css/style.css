@@ -427,7 +427,8 @@ input[type=checkbox]:checked ~ .collapse ul {
   color: inherit;
   line-height: 1em;
   display: inline-block;
-  padding: 2px;
+  padding: 0.3em;
+  font-size: 1.875em;
 }
 
 /* pages/home */

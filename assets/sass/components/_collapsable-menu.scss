@@ -109,12 +109,15 @@ float: right;
  .details {
    display:block;
    padding:15px 0 0 0;
+
  }
  .details a {
    text-decoration: none;
    color: inherit;
    line-height: 1em;
    display: inline-block;
-   padding: 2px;
+   padding: 0.3em;
+   font-size: $xx-large;
+
  }
 }
